@@ -38,7 +38,7 @@ Finally we created the word corpus by adding all the unique words. We further di
 
 #### Data Visualization: 
 After the data preprocessing, we used the frequency of the words in our corpus to create a Word Cloud for our dataset. The output was like this:
-![Picture](WordCloud.jpg)
+![WordCloud](WordCloud.jpg)
 
 #### Model Training: 
 We have used a tensorflow based deep neural network model for the classification. For the classification, we have used the tweet text and labels only. 
@@ -46,7 +46,7 @@ We used the Tensorflow tokenizer to tokenize the tweets. To make all the tweets 
 
 So our feature vector (X) consists of the padded token sequences and target vector (Y) consists the labels. 
 Using a 80% training and 20% test data, we have trained the data on our model having the following architecture:
-![Picture](Architecture.jpg)
+![Architecture](Architecture.jpg)
 
 The word embedding layers are responsible for converting the string tokens into numbers so that they can be used for learning in the neural network model. 
 The dropout layer ensures that the best architecture of no. of units in each hidden layer is used for the model. 
