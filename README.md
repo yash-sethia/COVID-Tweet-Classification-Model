@@ -42,7 +42,7 @@ After the data preprocessing, we used the frequency of the words in our corpus t
 
 #### Model Training: 
 We have used a tensorflow based deep neural network model for the classification. For the classification, we have used the tweet text and labels only. 
-We used the Tensorflow tokenizer to tokenize the tweets. To make all the tweets of same length we have used padding in the end. <br/><br/>
+We used the Tensorflow tokenizer to tokenize the tweets. To make all the tweets of same length we have used padding in the end. <br/>
 
 So our feature vector (X) consists of the padded token sequences and target vector (Y) consists the labels. 
 Using a 80% training and 20% test data, we have trained the data on our model having the following architecture:
@@ -51,7 +51,7 @@ Using a 80% training and 20% test data, we have trained the data on our model ha
 The word embedding layers are responsible for converting the string tokens into numbers so that they can be used for learning in the neural network model. 
 The dropout layer ensures that the best architecture of no. of units in each hidden layer is used for the model. 
 LSTM layers are used because the tweets have a context related which needs to be captured using the memory component of LSTM layers. 
-Finally using the dense layer to provide a feed forward neural network learning. <br/><br/>
+Finally using the dense layer to provide a feed forward neural network learning. <br/>
 
 We have used Binary Cross-entropy as loss function, Adam as the optimizer and accuracy as the performance metric. 
 Finally we used a batch size of 128 to fit the data on our model with 100 epochs. The model is finally saved for future use.
